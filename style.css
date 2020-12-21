@@ -351,7 +351,7 @@
 /* background colour */
 
 body {
-    background-color: FFD9D9;
+    background-color: white;
 }
 
 /* flex for title*/
@@ -368,8 +368,8 @@ body {
 .title > h1 {
     
     font-family: 'Anton', sans-serif;
-    background-color: red;
-    color: white;
+    background-color: #FFE716;
+    color: black;
     font-size: 45px;
     height: 100px;
     width: 1550px;
@@ -377,4 +377,16 @@ body {
     text-align: center;
     line-height: 75px;
     
+}
+
+.info{
+    margin: auto;
+    text-align: center;
+    border: 8px solid black;
+    width: 60%;
+    padding: 10px;
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color:black;
 }
