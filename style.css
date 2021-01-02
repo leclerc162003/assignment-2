@@ -390,3 +390,15 @@ body {
     text-align: center;
     color:black;
 }
+
+.display {
+  margin: auto;
+    text-align: center;
+    border: 8px solid black;
+    width: 60%;
+    padding: 10px;
+    font-family: 'Anton', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color:black;
+}
