@@ -1,7 +1,13 @@
 //ensuring cors error does not occur and keys 
 var link = 'https://cors-anywhere.herokuapp.com/';
+function code(){
+  var x = document.getElementById("myText").value; 
+  return x;
+}
+var bscode = (code()).toString();
+var fullLink = link + "http://datamall2.mytransport.sg/ltaodataservice/BusArrivalv2?BusStopCode=" + bscode;
 var settings = {
-    "url": link + "http://datamall2.mytransport.sg/ltaodataservice/BusArrivalv2?BusStopCode=28561",
+    "url": fullLink,
     "method": "GET",
     "timeout": 0,
     "headers": {
@@ -37,6 +43,7 @@ var settings = {
             
             document.getElementById('time').textContent = "Arriving Soon...";
             $(".display").css("border", "8px solid green");
+            $("h1").css("background-color", "green");
 
           }
 
@@ -51,9 +58,10 @@ var settings = {
             
             document.getElementById('time').textContent = Math.round(diff) + " " + "Minutes";
             $(".display").css("border", "8px solid red");
+            $("h1").css("background-color", "red");
           }
           else {
-            document.getElementById('time').textContent = "error";
+            document.getElementById('time').textContent = "Time is not available at the moment";
           }
           
 
