@@ -402,3 +402,27 @@ body {
     text-align: center;
     color:black;
 }
+
+.display1 {
+  margin: auto;
+    text-align: center;
+    border: 8px solid #484B4C;
+    width: 60%;
+    padding: 10px;
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color:black;
+}
+
+.display2 {
+  margin: auto;
+    text-align: center;
+    border: 8px solid #484B4C;
+    width: 60%;
+    padding: 10px;
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color:black;
+}
