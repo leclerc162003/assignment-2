@@ -1,11 +1,6 @@
 //ensuring cors error does not occur and keys 
 var link = 'https://cors-anywhere.herokuapp.com/';
-// function getcode(x) {
-//   let code = x;
-//   return code;
-// } 
 
-let item = localStorage.getItem('');
 document.addEventListener("submit", function (event) {
         //prevent default action of the form from actually submitting
         event.preventDefault();
@@ -22,11 +17,11 @@ document.addEventListener("submit", function (event) {
 
 
 var settings = {
-    "url": link + "http://datamall2.mytransport.sg/ltaodataservice/BusArrivalv2?BusStopCode=65009"  ,
+    "url": link + "http://datamall2.mytransport.sg/ltaodataservice/BusArrivalv2?BusStopCode=28009",
     "method": "GET",
     "timeout": 0,
     "headers": {
-      "AccountKey": "qmXLs/m2RZG1kdj0DepVog=="
+    "AccountKey": "qmXLs/m2RZG1kdj0DepVog=="
     },
   };
   function getdiff(x){
@@ -48,6 +43,8 @@ var settings = {
     var diff = (time_end - time_start)/60000
     return diff;
 
+    //javascript convert string to datetime (date.parse())
+
 
   }
 
@@ -56,7 +53,7 @@ var settings = {
   $.ajax(settings).done(function (response) {
     let result = response.Services;  
     for (let i=0; i<result.length; i++) {
-        if (result[i].ServiceNo == "82") {
+        if (result[i].ServiceNo == "334") {
            console.log(result[i])
            document.getElementById('serviceno').textContent = result[i].ServiceNo;
            document.getElementById('serviceno1').textContent = result[i].ServiceNo;
