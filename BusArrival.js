@@ -1,13 +1,13 @@
 //ensuring cors error does not occur and keys 
 var link = 'https://cors-anywhere.herokuapp.com/';
 
-
+//retrieving values from form 
 
 document.addEventListener('submit', function(event){
   event.preventDefault();
   var nameValue = document.getElementById("uniqueID").value;
   var busNo = document.getElementById("bus").value;
-  console.log(nameValue);
+  
 
   var settings = {
     "url": link + `http://datamall2.mytransport.sg/ltaodataservice/BusArrivalv2?BusStopCode=${nameValue}`,
@@ -17,6 +17,8 @@ document.addEventListener('submit', function(event){
     "AccountKey": "qmXLs/m2RZG1kdj0DepVog=="
     },
   };
+
+  // function to calculate time difference
   function getdiff(x){
     var time = x.substring(11,19);
     var timeNow = new Date();
@@ -40,7 +42,7 @@ document.addEventListener('submit', function(event){
     
     return diff;
 
-    //javascript convert string to datetime (date.parse())
+    
 
 
   }
@@ -52,7 +54,7 @@ document.addEventListener('submit', function(event){
     console.log(result);
     for (let i=0; i<result.length; i++) {
         if (result[i].ServiceNo == busNo) {
-           //console.log(result[i])
+           // print bus number
            document.getElementById('serviceno').textContent = result[i].ServiceNo;
            document.getElementById('serviceno1').textContent = result[i].ServiceNo;
            document.getElementById('serviceno2').textContent = result[i].ServiceNo;
@@ -66,7 +68,7 @@ document.addEventListener('submit', function(event){
           
 
           if (diff <= 2){
-            
+            //if bus is arriving in 2 mins
             document.getElementById('time').textContent = "Arriving Soon...";
             $(".display").css("border", "8px solid green");
             $("h1").css("background-color", "green");
@@ -77,7 +79,7 @@ document.addEventListener('submit', function(event){
           }
 
           else if (diff > 2 && diff <= 8){
-            
+            //if bus is arriving between 3 to 8 minutes
             document.getElementById('time').textContent = Math.round(diff) + " " + "Minutes";
             $("h1").css("background-color", "yellow");
             $(".display").css("border", "8px solid yellow");
@@ -91,7 +93,7 @@ document.addEventListener('submit', function(event){
           }
 
           else if (diff > 8){
-            
+            //bus takes more than 8 minutes to arrive
             document.getElementById('time').textContent = Math.round(diff) + " " + "Minutes";
             $(".display").css("border", "8px solid red");
             $("h1").css("background-color", "red");
@@ -123,6 +125,18 @@ document.addEventListener('submit', function(event){
           else{
             document.getElementById('time2').textContent = "Time is not available at the moment";
           }
+        }
+        else{
+          $(".display").css("border", "8px solid grey");
+          $("h1").css("background-color", "grey");
+          document.getElementById('todo').textContent = "You have not an invalid bus service";
+          document.getElementById('random').textContent = "Please Try Again";
+          document.getElementById('time').textContent = "";
+          document.getElementById('time1').textContent = "";
+          document.getElementById('time2').textContent = "";
+          document.getElementById('serviceno').textContent = "";
+          document.getElementById('serviceno1').textContent = "";
+          document.getElementById('serviceno2').textContent = "";
         }
     }
 
