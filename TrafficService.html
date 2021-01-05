@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <title>Machangel Eyes</title>
-        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href="TrafficService.css" rel="stylesheet" type="text/css" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -17,20 +17,14 @@ crossorigin="anonymous"></script>
     <header class="title">
         <h1>Machangel Eyes</h1>
     </header>
-
-    <header class="subtitle">
-        <h2>One-Stop Hub For Your Public Transport</h2>
-    </header>
-
-
     <br>
-    <section class="select">
-        <h3>What would you like to check?</h3>
+
+    <section class="status">
+        <span id="train"></span>
+        <span id="traindisrupted"></span>
     </section>
 
-    <section class="arrive">
-        <a href="BusArrival.html"><img src="ba.png" style="width:400px; height: 250px;" ></a>
-    </section>
+    <script src="TrafficService.js"></script>
+
     </body>
 </html>
-

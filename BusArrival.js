@@ -49,9 +49,10 @@ document.addEventListener('submit', function(event){
   //extracting data from API and printing
   $.ajax(settings).done(function (response) {
     let result = response.Services;  
+    console.log(result);
     for (let i=0; i<result.length; i++) {
         if (result[i].ServiceNo == busNo) {
-           console.log(result[i])
+           //console.log(result[i])
            document.getElementById('serviceno').textContent = result[i].ServiceNo;
            document.getElementById('serviceno1').textContent = result[i].ServiceNo;
            document.getElementById('serviceno2').textContent = result[i].ServiceNo;
