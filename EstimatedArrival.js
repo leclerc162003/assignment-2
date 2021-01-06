@@ -29,7 +29,7 @@ var settings = {
     //arrays to store messages for info client may need
     var htarr = [];
     var aarr=[];
-    var vbaarr = [];
+    var vbarr = [];
 
     console.log(arr);
     for (let i=0; i<arr[1][1].length; i++) {
@@ -94,7 +94,7 @@ var settings = {
     for (let a=0; a<aarr.length; a++){
         document.getElementById(`a${a+1}`).textContent = aarr[a];
     }
-    for (let v=0; v<vbrr.length; v++){
+    for (let v=0; v<vbarr.length; v++){
         document.getElementById(`vb${v+1}`).textContent = vbarr[v];
     }
     

@@ -380,7 +380,26 @@ body {
 }
 
 .image{
-    text-align: center;
+    
+  display: flex;
+  justify-content: space-between;
+  
+    
+}
+.image1{
+    
+  display: flex;
+  justify-content: space-between;
+  
+    
+}
+
+.image2{
+    
+  display: flex;
+  justify-content: space-between;
+  
+    
 }
 
 .home{

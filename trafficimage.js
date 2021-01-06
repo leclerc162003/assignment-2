@@ -16,7 +16,7 @@ var settings = {
     const arr = Object.keys(json_data).map((key) => [key, json_data[key]]);
     
     for (let i=0; i<arr[1][1].length; i++) {
-        document.getElementById(`pic${i+1}`).innerHTML = `<img src=${arr[1][1][i].ImageLink}>`
+        document.getElementById(`pic${i+1}`).innerHTML = `<img src=${arr[1][1][i].ImageLink} style="width:350px; height: 250px;">`
         console.log(arr[1][1][i].ImageLink)
     }
     
