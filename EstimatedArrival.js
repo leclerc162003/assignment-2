@@ -41,7 +41,7 @@ var settings = {
         }
         else if (arr[1][1][i].Type == "Roadwork"){
             countrw += 1;
-            htarr.push(arr[1][1][i].Message)
+            
         }
         else if (arr[1][1][i].Type == "Vehicle breakdown"){
             countvb += 1;
@@ -58,6 +58,7 @@ var settings = {
         }
         else if (arr[1][1][i].Type == "Heavy Traffic"){
             countht += 1;
+            htarr.push(arr[1][1][i].Message)
         }
         else if(arr[1][1][i].Type == "Misc."){
             countm += 1;

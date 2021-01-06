@@ -128,18 +128,7 @@ document.addEventListener('submit', function(event){
             document.getElementById('time2').textContent = "Time is not available at the moment";
           }
         }
-        // else if(result[i].ServiceNo != busNo){
-        //   $(".display").css("border", "8px solid grey");
-        //   $("h1").css("background-color", "grey");
-        //   document.getElementById('todo').textContent = "You have not an invalid bus service";
-        //   document.getElementById('random').textContent = "Please Try Again";
-        //   document.getElementById('time').textContent = "";
-        //   document.getElementById('time1').textContent = "";
-        //   document.getElementById('time2').textContent = "";
-        //   document.getElementById('serviceno').textContent = "";
-        //   document.getElementById('serviceno1').textContent = "";
-        //   document.getElementById('serviceno2').textContent = "";
-        // }
+        
     }
 
     

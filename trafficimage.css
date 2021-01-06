@@ -379,46 +379,10 @@ body {
     
 }
 
-/* flex for subtitle */
-.subtitle{
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row-reverse;
-    justify-content: center;
-    background-color: white;
-}
-
-/* text colour, font for title*/
-.subtitle > h2 {
-    
-    font-family: 'Anton', sans-serif;
-    background-color: grey;
-    color: white;
-    font-size: 20px;
-    height: 50px;
-    width: 1550px;
-    margin: 0px;
-    text-align: center;
-    line-height: 50px;
-    
-}
-
-.select{
-    font-family: 'Anton', sans-serif;
-    color: black;
-    font-size: 25px;
-    text-align: center;
-
-}
-
-.arrive{
+.image{
     text-align: center;
 }
 
-.train{
-  text-align: center;
-}
-
-.traffic{
+.home{
   text-align: center;
 }
