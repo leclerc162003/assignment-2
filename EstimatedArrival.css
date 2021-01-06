@@ -379,10 +379,10 @@ body {
     
 }
 
-.info{
+.display{
     margin: auto;
     text-align: center;
-    border: 8px solid black;
+    border: 8px solid #50085F;
     width: 60%;
     padding: 10px;
     font-family: 'Anton', sans-serif;
@@ -391,22 +391,11 @@ body {
     color:black;
 }
 
-.display {
-  margin: auto;
-    text-align: center;
-    border: 8px solid black;
-    width: 60%;
-    padding: 10px;
-    font-family: 'Anton', sans-serif;
-    font-size: 25px;
-    text-align: center;
-    color:black;
-}
 
-.display1 {
-  margin: auto;
+.heavytraffic{
+    margin: auto;
     text-align: center;
-    border: 8px solid #484B4C;
+    border: 8px solid #50085F;
     width: 60%;
     padding: 10px;
     font-family: 'Anton', sans-serif;
@@ -414,11 +403,10 @@ body {
     text-align: center;
     color:black;
 }
-
-.display2 {
-  margin: auto;
+.accidents{
+    margin: auto;
     text-align: center;
-    border: 8px solid #484B4C;
+    border: 8px solid #50085F;
     width: 60%;
     padding: 10px;
     font-family: 'Anton', sans-serif;
@@ -426,7 +414,14 @@ body {
     text-align: center;
     color:black;
 }
-
-.home{
+.vbc{
+  margin: auto;
   text-align: center;
+  border: 8px solid #50085F;
+  width: 60%;
+  padding: 10px;
+  font-family: 'Anton', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color:black;
 }

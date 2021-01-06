@@ -83,10 +83,12 @@ document.addEventListener('submit', function(event){
             document.getElementById('time').textContent = Math.round(diff) + " " + "Minutes";
             $("h1").css("background-color", "yellow");
             $(".display").css("border", "8px solid yellow");
-            var music = ["Someone You Loved By Lewis Capaldi", "Afterglow By Ed Sheeran", "Monster By Shawn Mendes (Featuring Justin Bieber)", "Dynamite By BTS", "Don't Start Now By Dua Lipa", "Before You Go By Lewis Capaldi", "Stuck with U By Ariana Grande (Featuring Justin Bieber)", "Therefore I Am By Billie Ellish", "Shallow By Lady Gaga & Bradley Cooper", "Everything I Wanted By Billie Ellish", "Hold Me While You Wait By Lewis Capaldi", "Blinding Lights By The Weeknd", "Perfect By Ed Sheeran", "Holy By Justin Bieber (Featuring Chance the Rapper)", "Lost in the Wild By WALK THE MOON"];
+            var music = ['<iframe width="360" height="275" src="https://www.youtube.com/embed/xrcMgO2fgpA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="360" height="275" src="https://www.youtube.com/embed/C3LCyRAzZWk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>','<iframe width="360" height="275" src="https://www.youtube.com/embed/uFbetFqyGlE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="360" height="275" src="https://www.youtube.com/embed/SctY9_1ylTM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="360" height="275" src="https://www.youtube.com/embed/fHI8X4OXluQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="360" height="275" src="https://www.youtube.com/embed/Jtauh8GcxBY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="360" height="275" src="https://www.youtube.com/embed/pE49WK-oNjU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="360" height="275" src="https://www.youtube.com/embed/_tNU6dpjIyM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="360" height="275" src="https://www.youtube.com/embed/SlPhMPnQ58k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="360" height="275" src="https://www.youtube.com/embed/jO2viLEW-1A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="360" height="275" src="https://www.youtube.com/embed/uztfu_LXEPA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', '<iframe width="360" height="275" src="https://www.youtube.com/embed/OiMWFojB9Ok" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'];
             document.getElementById('todo').textContent = "What to do?";
             document.getElementById('todo').textContent = "Listen to a song!";
-            document.getElementById('random').textContent = music[Math.floor(Math.random() * music.length)]
+            document.getElementById('random').innerHTML = music[Math.floor(Math.random() * music.length)]
+            
+           
             
             
 
@@ -126,18 +128,18 @@ document.addEventListener('submit', function(event){
             document.getElementById('time2').textContent = "Time is not available at the moment";
           }
         }
-        else{
-          $(".display").css("border", "8px solid grey");
-          $("h1").css("background-color", "grey");
-          document.getElementById('todo').textContent = "You have not an invalid bus service";
-          document.getElementById('random').textContent = "Please Try Again";
-          document.getElementById('time').textContent = "";
-          document.getElementById('time1').textContent = "";
-          document.getElementById('time2').textContent = "";
-          document.getElementById('serviceno').textContent = "";
-          document.getElementById('serviceno1').textContent = "";
-          document.getElementById('serviceno2').textContent = "";
-        }
+        // else if(result[i].ServiceNo != busNo){
+        //   $(".display").css("border", "8px solid grey");
+        //   $("h1").css("background-color", "grey");
+        //   document.getElementById('todo').textContent = "You have not an invalid bus service";
+        //   document.getElementById('random').textContent = "Please Try Again";
+        //   document.getElementById('time').textContent = "";
+        //   document.getElementById('time1').textContent = "";
+        //   document.getElementById('time2').textContent = "";
+        //   document.getElementById('serviceno').textContent = "";
+        //   document.getElementById('serviceno1').textContent = "";
+        //   document.getElementById('serviceno2').textContent = "";
+        // }
     }
 
     
