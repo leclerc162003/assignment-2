@@ -19,6 +19,10 @@ As a user type, I want to use the MRT is disrupted feature to see if there are a
 - Allows users to check traffic conditions 
 - Allows users to use a cool feature where they can see live road images.
 
+## Technologies used 
+- Jquery to simplify DOM manipulation
+- Google fonts
+
 ## Features to implement in the future
 - Shows if there is any MRT disrupted
 - Shows estimated travel time on expressways
@@ -26,15 +30,22 @@ Features to implement in the future
 - taxi availabity when MRT is disrupted
 Hence, Machangel Eyes is like an all in one package.
 
+## Deployment
+Github link - https://leclerc162003.github.io/assignment-2/index.html
+
+LTA API Key: "qmXLs/m2RZG1kdj0DepVog=="
+
 
 ## Testing
 - testing across all devices and servers is okay.
 - API worked as expected and outputs came out as expected.
+- CSS validation
+- JS codes passed
 
 ## Credits 
 - LTA API
 - NEA API
-
+- Google fonts 
 ## Media 
 
 
