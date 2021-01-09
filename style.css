@@ -425,3 +425,29 @@ body {
 .image{
   text-align: center;
 }
+
+.weather{
+    margin: auto;
+    text-align: center;
+    border: 8px solid #46CADA;;
+    width: 60%;
+    padding: 10px;
+    font-family: 'Anton', sans-serif;
+    font-size: 25px;
+    
+    color:black;
+
+}
+/* adjusting to different screen sizes*/
+@media screen and (max-width:485px){
+  .subtitle > h2 {
+      width: 100%;
+      font-size: 12px;
+      
+      
+      
+  }
+  
+  
+}
+  
