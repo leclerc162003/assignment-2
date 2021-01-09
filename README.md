@@ -15,6 +15,9 @@ As a user type, I want to use the MRT is disrupted feature to see if there are a
 ## Features 
 - Allows users to check estimated arrival time of the bus
 - Using the estimated time to suggest things they can do 
+- Allows users to see Weather 
+- Allows users to check traffic conditions 
+- Allows users to use a cool feature where they can see live road images.
 
 ## Features to implement in the future
 - Shows if there is any MRT disrupted
@@ -25,9 +28,12 @@ Hence, Machangel Eyes is like an all in one package.
 
 
 ## Testing
+- testing across all devices and servers is okay.
+- API worked as expected and outputs came out as expected.
 
 ## Credits 
 - LTA API
+- NEA API
 
 ## Media 
 
